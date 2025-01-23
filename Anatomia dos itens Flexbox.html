@@ -1,0 +1,63 @@
+
+<!-- Todos os itens em flex box vai ter order:0, você pode orderna com números mais o css vai order sozinho -->
+<img src="Print flex-wrap/Itens flex 01.png" alt="">
+
+
+<!-- o align-self se aplica diretamente aos itens ligado ao eixo transversal o cross-axis e ele tem 5 valores disponiveis dentro ele 1: auto, 2:flex-start , 3:flex-end, 4:center, 5:stretch-->
+<img src="Print flex-wrap/itens flex 02.png" alt=""> <img src="Print flex-wrap/itens flex align-self.png" alt="">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+        div#i1{
+            order: 0;
+        }
+        div#i2{
+            order: -2;
+        }
+        div#i3{
+            order: 4;
+        }
+        div#i4{
+            order: 8;
+        }
+        div#i5{
+            order: 2;
+        }
+        div#i6{
+            order: 0;
+        }
+        div#i7{
+            order: -4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div
+    
+</body>
+</html>
